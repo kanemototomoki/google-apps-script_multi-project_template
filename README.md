@@ -60,3 +60,8 @@ npm run clasp:clone
 ### 注意点
 
 1. webpack の設定上、プロジェクトのスクリプト名は`index.js`で統一
+
+
+## TODO
+- TypeScript対応
+- M1 Mac以外での動作テストをしていない
