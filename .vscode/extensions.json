@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "coenraads.bracket-pair-colorizer",
+    "dbaeumer.vscode-eslint",
+    "oderwat.indent-rainbow",
+    "visualstudioexptteam.vscodeintellicode",
+    "esbenp.prettier-vscode"
+  ],
+  "unwantedRecommendations": []
+}
