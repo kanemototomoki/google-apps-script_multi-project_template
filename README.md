@@ -1,6 +1,6 @@
 ## 概要
 
-GoogleAppScript の開発環境
+GoogleAppScript の開発環境  
 複数のプロジェクトを同じリポジトリで管理する
 
 ```sh
