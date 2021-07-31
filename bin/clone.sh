@@ -1,9 +1,4 @@
 #!/bin/zsh
-# printf "Input Project Name >> "; read project_name
-
-
-# cd ./src && mkdir ${project_name} && cd ${project_name}
-# clasp clone
 
 select_list=`npx clasp list | sed -E 's/(\[2K|\[1G)//g' | sed -E 's/[[:cntrl:]]//g'`
 
