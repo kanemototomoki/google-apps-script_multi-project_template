@@ -35,11 +35,12 @@ fi
 
 # clasp list を実行して対象のプロジェクト名と一致するスクリプトIDを`.clasp.json`に書き込む
 url=`npx clasp list |
-grep $1 | grep -Eo '(/d/)[0-9a-zA-Z?=#+_&:/.%]+(/edit)$' |
+grep $1 | grep -Eo '(/d/)[0-9a-zA-Z?=#+_&:/.%\-]+(/edit)$' |
 sed -E 's/(\/d\/|\/edit)//g'`
 
 echo "{ \"scriptId\": \"$url\" }" > .clasp.json
 
 npm run build --my_target_dir=$1 && cd dist/$1 &&
 npx clasp push &&
-npx clasp deploy -i $2
+npx clasp deploy -i $2 &&
+cd ../.. && echo '{ "scriptId": "" }' > .clasp.json
