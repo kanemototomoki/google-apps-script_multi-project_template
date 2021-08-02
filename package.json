@@ -2,8 +2,8 @@
   "scripts": {
     "start": "webpack serve",
     "build": "webpack --progress",
-    "clasp:clone": "bin/clone.sh",
-    "clasp:deploy": "bin/deploy.sh"
+    "clasp:clone": "chmod +x bin/clone.sh && bin/clone.sh",
+    "clasp:deploy": "chmod +x bin/deploy.sh && bin/deploy.sh"
   },
   "devDependencies": {
     "@babel/core": "^7.12.17",
