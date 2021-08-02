@@ -7,9 +7,9 @@ GoogleAppScript の開発環境
 .
 ├── dist # 実際にデプロイされるファイル群
 │   ├── prjA
-│   │   └── bundle.js
+│   │   └── index.js
 │   └── prjB
-│       ├── bundle.js
+│       ├── index.js
 │       └── index.html
 └── src # 開発時に触るファイル群
     ├── prjA
@@ -49,8 +49,7 @@ npm run clasp:deploy ${dirName} ${deployId}
 
 ### 既存プロジェクトからクローン
 
-下記コマンド後、入力受付になるのでプロジェクト名の入力とクローンするプロジェクトを選択。  
-**※注意 GAS のプロジェクト名とディレクトリ名を統一すること**  
+下記コマンド後、クローンするプロジェクトの番号を選択する。  
 クローンしたコードが`src`配下に作成されます。
 
 ```sh
@@ -60,8 +59,9 @@ npm run clasp:clone
 ### 注意点
 
 1. webpack の設定上、プロジェクトのスクリプト名は`index.js`で統一
+2. プロジェクト名とディレクトリ名を一致させる必要がある
 
 
 ## TODO
 - TypeScript対応
-- M1 Mac以外での動作テストをしていない
+- Mac(zsh)以外で動作するか不明
